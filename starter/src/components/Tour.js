@@ -1,23 +1,31 @@
-import Tour from './Tour';
+import React from 'react';
 
-const Tours = ({ tours }) => {
+
+const Tour = ({ image, date, info, title, location, duration, cost }) => {
   return (
-    <section>
-      <div>
-        {tours.map((tour) => (
-          <Tour
-            key={tour.id}
-            img={tour.img}
-            date={tour.date}
-            title={tour.title}
-            info={tour.info}
-            location={tour.location}
-            price={tour.price}
-            duration={tour.duration}
-          />
-        ))}
+    <article className="tour-card">
+      <div className="tour-img-container">
+        <img src={image} className="tour-img" alt={title} />
+        <p className="tour-date">{date}</p>
       </div>
-    </section>
+      <div className="tour-info">
+        <div className="tour-title">
+          <h4>{title}</h4>
+        </div>
+        <p>{info}</p>
+        <div className="tour-footer">
+          <p>
+            <span>
+              <i className="fas fa-map"></i>
+            </span>
+            {location}
+          </p>
+          <p>from ${cost}</p>
+          <p>{duration} days</p>
+        </div>
+      </div>
+    </article>
   );
 };
-export default Tours;
+
+export default Tour;
