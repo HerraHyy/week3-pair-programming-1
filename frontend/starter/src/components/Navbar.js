@@ -1,4 +1,8 @@
 import logo from '../images/logo.svg'
+import PageLinks from './PageLinks'
+import SocialLinks from './SocialLinks';
+import { FaFacebook, FaTwitter, FaSquarespace } from 'react-icons/fa'
+
 const Navbar = () => {
   return (
       <nav className="navbar">
@@ -9,29 +13,8 @@ const Navbar = () => {
             <i className="fas fa-bars"></i>
           </button>
         </div>
-        <ul className="nav-links" id="nav-links">
-          <li>
-            <a href="#home" className="nav-link">
-              home
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="nav-link">
-              about
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="nav-link">
-              services
-            </a>
-          </li>
-          <li>
-            <a href="#tours" className="nav-link">
-              tours
-            </a>
-          </li>
-        </ul>
         <PageLinks parentClass='nav-links' itemClass='nav-link' />
+        <SocialLinks parentClass='nav-links' itemClass='nav-link' />
       </div>
     </nav>
   );

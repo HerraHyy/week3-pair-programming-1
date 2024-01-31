@@ -503,6 +503,21 @@ Navbar
   background: var(--clr-primary-8);
   padding-left: 2.25rem;
 }
+.fafacebook-icon, .fasquarespace-icon, .fatwitter-icon {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.fafacebook-icon:hover, .fasquarespace-icon:hover, .fatwitter-icon:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+  padding-left: 2.25rem;
+}
 /* nav toggle functionality */
 .nav-links {
   height: 0;
