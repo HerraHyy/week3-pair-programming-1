@@ -537,6 +537,9 @@ Navbar
   .nav-links {
     height: auto;
     display: flex;
+    justify-content: center; /* added this to center links */
+    padding-bottom: 20px; /* added this to center links in footer */
+    padding-top: 20px; /* added this to center links on nav bar*/
   }
   .nav-center {
     display: flex;
